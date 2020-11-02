@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		0523CD92254FD7DB00DF3373 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0523CD91254FD7DB00DF3373 /* Preview Assets.xcassets */; };
 		0523CD9D254FD7DC00DF3373 /* LinkTestSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0523CD9C254FD7DC00DF3373 /* LinkTestSwiftTests.swift */; };
 		0523CDA8254FD7DC00DF3373 /* LinkTestSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0523CDA7254FD7DC00DF3373 /* LinkTestSwiftUITests.swift */; };
+		0523CDBA254FD7F400DF3373 /* LinkKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0523CDB8254FD7F400DF3373 /* LinkKitResources.bundle */; };
+		0523CDBF254FD7FD00DF3373 /* LinkKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0523CDB9254FD7F400DF3373 /* LinkKit.xcframework */; };
+		0523CDCA254FD8C200DF3373 /* LinkTestSwift.m in Sources */ = {isa = PBXBuildFile; fileRef = 0523CDC9254FD8C200DF3373 /* LinkTestSwift.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,11 @@
 		0523CDA3254FD7DC00DF3373 /* LinkTestSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkTestSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0523CDA7254FD7DC00DF3373 /* LinkTestSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkTestSwiftUITests.swift; sourceTree = "<group>"; };
 		0523CDA9254FD7DC00DF3373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0523CDB8254FD7F400DF3373 /* LinkKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LinkKitResources.bundle; sourceTree = "<group>"; };
+		0523CDB9254FD7F400DF3373 /* LinkKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = LinkKit.xcframework; sourceTree = "<group>"; };
+		0523CDC7254FD8C100DF3373 /* LinkTestSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LinkTestSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		0523CDC8254FD8C200DF3373 /* LinkTestSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkTestSwift.h; sourceTree = "<group>"; };
+		0523CDC9254FD8C200DF3373 /* LinkTestSwift.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkTestSwift.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0523CDBF254FD7FD00DF3373 /* LinkKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,10 +84,15 @@
 		0523CD7E254FD7DB00DF3373 = {
 			isa = PBXGroup;
 			children = (
+				0523CDC8254FD8C200DF3373 /* LinkTestSwift.h */,
+				0523CDC9254FD8C200DF3373 /* LinkTestSwift.m */,
+				0523CDB9254FD7F400DF3373 /* LinkKit.xcframework */,
+				0523CDB8254FD7F400DF3373 /* LinkKitResources.bundle */,
 				0523CD89254FD7DB00DF3373 /* LinkTestSwift */,
 				0523CD9B254FD7DC00DF3373 /* LinkTestSwiftTests */,
 				0523CDA6254FD7DC00DF3373 /* LinkTestSwiftUITests */,
 				0523CD88254FD7DB00DF3373 /* Products */,
+				0523CDC7254FD8C100DF3373 /* LinkTestSwift-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,6 +211,7 @@
 				TargetAttributes = {
 					0523CD86254FD7DB00DF3373 = {
 						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1210;
 					};
 					0523CD97254FD7DC00DF3373 = {
 						CreatedOnToolsVersion = 12.1;
@@ -234,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0523CD92254FD7DB00DF3373 /* Preview Assets.xcassets in Resources */,
+				0523CDBA254FD7F400DF3373 /* LinkKitResources.bundle in Resources */,
 				0523CD8F254FD7DB00DF3373 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0523CDCA254FD8C200DF3373 /* LinkTestSwift.m in Sources */,
 				0523CD8D254FD7DB00DF3373 /* ContentView.swift in Sources */,
 				0523CD8B254FD7DB00DF3373 /* LinkTestSwiftApp.swift in Sources */,
 			);
@@ -417,6 +434,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"LinkTestSwift/Preview Content\"";
 				DEVELOPMENT_TEAM = ZWULF5LA37;
@@ -429,6 +447,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.signalcompose.LinkTestSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LinkTestSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -439,6 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"LinkTestSwift/Preview Content\"";
 				DEVELOPMENT_TEAM = ZWULF5LA37;
@@ -451,6 +472,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.signalcompose.LinkTestSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LinkTestSwift-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
